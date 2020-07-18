@@ -1,10 +1,10 @@
 import { GET_SMURFS_START, GET_SMURFS_SUCCESS, GET_SMURFS_FAILURE } from '../Actions/FormActions';
 
-const initialState = [{
-    name: '',
-    age: 0,
-    height: 0,
-}];
+const initialState = {
+    smurfs: [],
+    loading: false,
+    error: "",
+    };
 
 const reducer = (state = initialState, action) => {
     switch(action.type){
@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
         return{
             ...state,
             name: '',
-            loading: false,
+            loading: true,
             height: action.payload
         }
         case GET_SMURFS_FAILURE:
