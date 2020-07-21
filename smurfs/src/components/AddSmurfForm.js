@@ -42,6 +42,11 @@ const AddOneSmurf = props =>
 const mapStateToProps = state => { return { smurfsData : state.smurfsReducer } };
 
 export default connect( mapStateToProps, { getSmurfs, sendSmurf } )( AddOneSmurf );
+
+
+
+
+
 // example data
 // {
 //     name: "Brainey",

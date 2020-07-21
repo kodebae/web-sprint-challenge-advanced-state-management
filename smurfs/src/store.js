@@ -10,5 +10,4 @@ export default function configureStore() {
     );
   }
 
-
   //all components parent and container components must have access to the store. Store is now called and spread where needed. 
