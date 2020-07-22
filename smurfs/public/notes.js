@@ -14,7 +14,7 @@
   * 
   * * 3. The app is our "Top level coponent". We are going to use this file to render all of our components. This part of the App will have a button that takes you into the smurf village. :)
   * 
-  * * 4. Create the main store function. This is going to house our store. With our store we want to make sure that any parent, or container components, we build will have access to it. Navigate to the index,js file. Import the provider component into the index.js file. NOW WRAP THE MAIN APP COMPONENT IN THE PROVIDER COMPONENT. Found in the index.js file. Pass in the store compoenet as prop set equal to the store created. 
+  * * 4. Create the main store function. This is going to house our store. With our store we want to make sure that any parent, or container components, we build will have access to it. Navigate to the index,js file. Found in the index.js file. Pass in the store compoenet as prop set equal to the store created. 
   * 
   * * 5. Create the first component. This one will be our form component called postForm.js. Then import connect to react redux. Follow suit with the second component. Remember that the components will be rendered, the actions will handle the API and the clicks, and any other actions our user might experience. 
   * 

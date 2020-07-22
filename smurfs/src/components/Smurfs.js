@@ -1,16 +1,19 @@
-import React from "react";
-
+import React, { useContext } from 'react';
+import { myContext } from "../Context/myContext";
+import OneSmurf from "./OneSmurf";
 
 const Smurfs = () => {
-//   console.log(smurfs);
-  return (
-    <div>
-      <div>
-        <h2>The Hiden Smurf Village</h2>
-      </div>
-
-    </div>
-  );
+	const {smurfs} = useContext(myContext);
+	return (
+		<div>
+			{smurfs.map(smurf => (
+				<OneSmurf
+					key={smurf.id}
+					smurf={smurf}
+				/>
+			))}
+		</div>
+	);
 };
 
 export default Smurfs;
